@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:background="@color/blanco"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="15dp"
+    android:id="@+id/cardViewMenu">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="190dp"
+            android:id="@+id/imagePlatoCard"
+            android:src="@drawable/imagena"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mcdonalds"
+            android:id="@+id/textNombrePCard"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imagePlatoCard"
+            android:layout_marginTop="29dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_Precio"
+            android:id="@+id/textPrecioCard"
+            android:layout_below="@+id/textNombrePCard"
+            android:layout_toEndOf="@+id/imagePlatoCard" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4000"
+            android:id="@+id/textPrecioPlatoCard"
+            android:layout_below="@+id/textPrecioCard"
+            android:layout_toEndOf="@+id/imagePlatoCard" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

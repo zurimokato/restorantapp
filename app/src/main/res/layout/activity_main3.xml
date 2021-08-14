@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="unimagdalena.project.com.otrapracticamas.activities.MainActivity3">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/icon_back_24dp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="@string/todo" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textColor="@color/blanco"
+                android:textSize="17sp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:id="@+id/cabeza"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        android:layout_below="@id/view">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imagenPlato"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:src="@drawable/imagena"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/nombrePlato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imagenPlato"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precioPlato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombrePlato"
+                android:layout_marginTop="15dp"
+                android:text="@string/precioEnvio"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descrp"
+                android:id="@+id/textDescripC"
+                android:layout_below="@+id/precioPlato"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hsjdchsjhcjs"
+                android:id="@+id/textDescripcionPlato"
+                android:layout_below="@+id/textDescripC"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <Button
+                android:layout_below="@+id/textDescripcionPlato"
+                android:id="@+id/bAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_style"
+                android:layout_marginTop="15dp"
+                android:text="@string/agregar"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        android:id="@+id/imagePlato"
+        android:src="@drawable/imagena"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bic MC"
+        android:id="@+id/textNombreP"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imagePlato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tex_Precio"
+        android:id="@+id/textPrecio"
+        android:layout_below="@+id/textNombreP"
+        android:layout_toEndOf="@+id/imagePlato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4000"
+        android:id="@+id/textPrecioPlato"
+        android:layout_below="@+id/textPrecio"
+        android:layout_toEndOf="@+id/imagePlato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descrp"
+        android:id="@+id/textDescrip"
+        android:layout_below="@+id/textPrecioPlato"
+        android:layout_toEndOf="@+id/imagePlato" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="hsjdchsjhcjs"
+        android:id="@+id/textDescripcionPlato"
+        android:layout_below="@+id/textDescrip"
+        android:layout_toEndOf="@+id/imagePlato" />
+</RelativeLayout>

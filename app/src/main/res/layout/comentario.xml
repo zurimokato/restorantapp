@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:id="@+id/textVi"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textUsuario"
+        android:layout_marginTop="9dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nasjas"
+        android:id="@+id/textUsuario"
+        android:layout_below="@+id/textVi"
+        android:layout_alignStart="@+id/textVco" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comen"
+        android:id="@+id/textVco"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textUsuario"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="ajsajskajs"
+        android:id="@+id/textComentario"
+        android:layout_below="@+id/textVco"
+        android:layout_alignStart="@+id/textVco" />
+
+</RelativeLayout>

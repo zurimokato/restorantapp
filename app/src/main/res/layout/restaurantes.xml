@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="16dp"
+    app:cardCornerRadius="4dp"
+    app:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagenRestaurante"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/imageDes"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/imagena" />
+
+        <TextView
+            android:id="@+id/textViewNombreR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imagenRestaurante"
+            android:text="@string/mcdonalds"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewDireccionR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewNombreR"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imagenRestaurante"
+            android:text="@string/direc" />
+
+        <TextView
+            android:id="@+id/textViewCosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDireccionR"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imagenRestaurante"
+            android:text="@string/precioEnvio" />
+
+        <TextView
+            android:id="@+id/textViewCostoenvioR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCosto"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imagenRestaurante"
+            android:text="@string/_3200" />
+
+        <RatingBar
+            android:id="@+id/ratingCalifR"
+            style="?attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imagenRestaurante"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="0.5" />
+
+        <Button
+            android:id="@+id/detailid"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@id/ratingCalifR"
+            android:padding="0dp"
+            android:text="@string/view_details"
+            android:textColor="@color/Orange"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
